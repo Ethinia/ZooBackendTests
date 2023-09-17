@@ -5,7 +5,7 @@ import datetime
 current_time = datetime.datetime.now()
 date = str(f"{current_time.year}-0{current_time.month}-{current_time.day}")
 
-url = "http://localhost:3001/api/zoo"
+url = "http://localhost:3001/animals"
 
 def test_getlist():
     r = requests.get(url)
